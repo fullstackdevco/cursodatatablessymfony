@@ -1,0 +1,46 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Agenda.
+ *
+ * @ORM\Table(name="agenda")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\AgendaRepository")
+ */
+class Agenda
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Disponibilidad", inversedBy="agendas")
+     * @ORM\JoinColumn(name="disponibilidad_id", referencedColumnName="id")
+     */
+    private $disponibilidad;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Usuario", inversedBy="agendas")
+     * @ORM\JoinColumn(name="usuario_id", referencedColumnName="id")
+     */
+    private $usuario;
+
+    /**
+     * Get id.
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+}

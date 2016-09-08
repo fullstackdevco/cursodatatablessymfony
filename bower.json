@@ -1,0 +1,21 @@
+{
+  "name": "cursodatatablessymfony",
+  "homepage": "https://github.com/fullstackdevco/cursodatatablessymfony",
+  "authors": [
+    "Developer FullstackDevCo <fullstackdevco@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/AppBundle/Resources/public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.6"
+  }
+}
