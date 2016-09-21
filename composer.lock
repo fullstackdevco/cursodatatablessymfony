@@ -4,13 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "hash": "cf8a58553e8e19fcc4a82c845257fbb1",
-    "content-hash": "29ee5b3af1209ff384fd03b078202a59",
-=======
     "hash": "d73300277ccf8588b8028180a45ad8e4",
     "content-hash": "546587291f4e67cabdf8830f828f8993",
->>>>>>> 3cbc707e09296e2bb303f8fcbf392ba93e08c77f
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -779,8 +774,6 @@
                 "orm"
             ],
             "time": "2016-09-10 18:51:13"
-<<<<<<< HEAD
-=======
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -869,7 +862,6 @@
                 "rest"
             ],
             "time": "2016-09-07 15:10:55"
->>>>>>> 3cbc707e09296e2bb303f8fcbf392ba93e08c77f
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1599,7 +1591,6 @@
         },
         {
             "name": "sensio/distribution-bundle",
-<<<<<<< HEAD
             "version": "v5.0.12",
             "source": {
                 "type": "git",
@@ -1610,18 +1601,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/b6dcd04595e4db95ead22ddea58c397864e00c32",
                 "reference": "b6dcd04595e4db95ead22ddea58c397864e00c32",
-=======
-            "version": "v5.0.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "fc3d3998527726761e140715e6e439780a31eec4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/fc3d3998527726761e140715e6e439780a31eec4",
-                "reference": "fc3d3998527726761e140715e6e439780a31eec4",
->>>>>>> 3cbc707e09296e2bb303f8fcbf392ba93e08c77f
                 "shasum": ""
             },
             "require": {
@@ -1660,11 +1639,7 @@
                 "configuration",
                 "distribution"
             ],
-<<<<<<< HEAD
             "time": "2016-09-14 20:25:12"
-=======
-            "time": "2016-09-12 14:16:31"
->>>>>>> 3cbc707e09296e2bb303f8fcbf392ba93e08c77f
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2592,16 +2567,16 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "v2.0.3",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "1ebc51dd6d47f4037b0d2493335304e5aea50ab6"
+                "reference": "bc814293b153f543c99c89d94c8cc07b3259eef9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/1ebc51dd6d47f4037b0d2493335304e5aea50ab6",
-                "reference": "1ebc51dd6d47f4037b0d2493335304e5aea50ab6",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/bc814293b153f543c99c89d94c8cc07b3259eef9",
+                "reference": "bc814293b153f543c99c89d94c8cc07b3259eef9",
                 "shasum": ""
             },
             "require": {
@@ -2613,7 +2588,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -2640,7 +2615,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2016-08-30 11:08:41"
+            "time": "2016-09-21 11:26:55"
         }
     ],
     "packages-dev": [

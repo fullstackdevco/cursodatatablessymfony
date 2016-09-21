@@ -6,3 +6,8 @@ api_app:
     resource: "@AppBundle/Controller/ApiController.php"
     type:     rest
     prefix:   app/api/
+
+api_disponibilidad:
+    resource: "@AppBundle/Controller/ApiDisponibilidadController.php"
+    type:     rest
+    prefix:   app/api/

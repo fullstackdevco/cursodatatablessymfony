@@ -9,9 +9,8 @@ class LoadDisponibilidadData implements FixtureInterface
 {
     public function load(ObjectManager $manager)
     {
-<<<<<<< HEAD
         $hora = new \DateTime();
-        for($i=0; $i<200;$i++){
+        for($i=0; $i<20;$i++){
             $fecha = new \DateTime();
             $disponibilidad = new Disponibilidad();
             $disponibilidad->setFecha($fecha);
@@ -20,15 +19,5 @@ class LoadDisponibilidadData implements FixtureInterface
             $manager->persist($disponibilidad);
             $manager->flush();
         }
-=======
-        for($i=0; $i<200;$i++){
-            $disponibilidad = new Disponibilidad();
-            $disponibilidad->setFecha(new \DateTime());
-            $disponibilidad->setHora(new \DateTime());
-
-            $manager->persist($disponibilidad);
-        }
-        $manager->flush();
->>>>>>> 3cbc707e09296e2bb303f8fcbf392ba93e08c77f
     }
 }
