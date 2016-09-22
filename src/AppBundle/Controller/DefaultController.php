@@ -22,4 +22,12 @@ class DefaultController extends Controller
     {
         return $this->render('AppBundle:Principal:datatablesestatico.html.twig');
     }
+
+    /**
+     * @Route("/ejemplo2", name="ejemplo1")
+     */
+    public function ejemplo2Action(Request $request)
+    {
+        return $this->render('AppBundle:Principal:datatablessymfony.html.twig');
+    }
 }

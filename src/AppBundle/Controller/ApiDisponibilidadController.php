@@ -55,6 +55,14 @@ class ApiDisponibilidadController extends FOSRestController implements ClassReso
         ->getQuery()
         ->getResult();
 
+        $cantidaddatos = $disponibilidad->createQueryBuilder('d')
+        ->select('COUNT(d.id)')
+        ->where('d.fecha like :searchvalue OR d.hora like :searchvalue')
+        ->orderBy($ordenadores[$request->query->get('order')[0]["column"]], $request->query->get('order')[0]["dir"])
+        ->setParameter('searchvalue', '%'.$request->query->get('search')["value"].'%')
+        ->getQuery()
+        ->getSingleScalarResult();
+
         $valores= array();
 
         foreach ($datos as $dato) {
@@ -66,8 +74,8 @@ class ApiDisponibilidadController extends FOSRestController implements ClassReso
 
         $respuesta = array(
             'draw' => $request->query->get('draw'),
-            'recordsTotal' => '57',
-            'recordsFiltered' => '57',
+            'recordsTotal' => $cantidaddatos,
+            'recordsFiltered' => $cantidaddatos,
             'data' => $valores,
         );
         $view = $this->view($respuesta, 200);

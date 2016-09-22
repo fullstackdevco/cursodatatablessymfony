@@ -1,0 +1,1 @@
+(function(){$(document).ready(function(){$("#tabla2").DataTable({processing:true,serverSide:true,ajax:{url:"/ejemplo2",type:"POST"},columns:[{data:"id"},{data:"fecha"},{data:"hora"}]})})})();
